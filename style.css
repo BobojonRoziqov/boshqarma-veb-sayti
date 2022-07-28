@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+/*header*/
+.container-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: rgb(4, 14, 41);
+    color: white;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 500px;
+
+}
+
+.logo_img {
+    border-right: 2px solid rgb(255, 255, 255);
+    padding: 0 1rem;
+}
+
+a.logo_text {
+    font-size: 16px;
+    font-family: "arial";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-left: 2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-decoration: none;
+    max-width: 500px;
+}
+
+.logo_text:hover {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+
+}
+
+
+
+.icon {
+    display: none;
+    font-size: 1.2rem;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.phone_social_networks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    margin: 10px;
+    padding: 1rem 1rem;
+
+}
+
+.social_networks {
+    margin-top: 0.5rem;
+}
+
+.icon_1 {
+    color: white;
+    padding: 0 0.2rem;
+}
+
+/*nav*/
+nav {
+    width: 100%;
+    background-color: rgb(4, 14, 41);
+    color: rgb(54, 213, 30);
+    padding: 1rem 2rem;
+    border-top: 3px solid rgb(255, 255, 255);
+
+}
+
+.nav-section {
+    width: 80%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    justify-content: space-between;
+    color: rgb(4, 14, 41);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: auto;
+
+}
+
+.menu {
+    display: none;
+}
+
+.nav-info {
+    display: none;
+}
+
+/*nav*/
+
+/*about-me-section*/
+
+.about-me-section {
+    background-image: url(./images/soha\ korxonalari.jpg);
+    height: 68vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.about-me-section_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #313b3b01;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-me-section_overlay>h1 {
+    text-align: center;
+    max-width: 900px;
+    font-size: 2rem;
+    line-height: 1.5em;
+    cursor: pointer;
+    padding: 0 1rem;
+
+}
+
+.about-me-section_overlay>p {
+    text-align: center;
+    max-width: 900px;
+    font-size: 1rem;
+    padding: 1.7em 0;
+    color: rgba(255, 255, 255, 0.925);
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.about-me-section_overlay>button {
+    color: rgb(4, 14, 41);
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+
+@media only screen and (max-width: 1024px) {
+
+
+    /*header*/
+    .info {
+        display: none;
+    }
+
+    .nav-section {
+        display: none;
+    }
+
+    a.logo_text {
+        font-size: 12px;
+        line-height: 1rem;
+        padding-left: 1rem;
+    }
+
+    .logo_img>svg {
+        width: 23.2828mm;
+        height: 23.283mm;
+    }
+
+    .logo_img {
+        padding: 0 4px;
+    }
+
+    .menu {
+        display: block;
+        margin: 0 1rem;
+
+    }
+
+
+    /*header*/
+
+    /*nav*/
+    .nav-info {
+        display: block;
+        text-align: center;
+    }
+
+    /*nav*/
+
+
+}
+
+@media only screen and (max-width: 415px) {
+    main {
+        width: 100%;
+    }
+
+    /*header*/
+    .header {
+        padding: 0rem;
+    }
+
+    .logo_img>svg {
+        width: 13.2828mm;
+        height: 13.283mm;
+    }
+
+    a.logo_text {
+        font-size: 8px;
+        line-height: 0.8rem;
+        padding-left: 1rem;
+    }
+
+    /*header*/
+
+    .about-me-section_overlay>h1 {
+        font-size: 1rem;
+    }
+
+}
