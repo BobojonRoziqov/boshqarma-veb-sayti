@@ -8,44 +8,55 @@
 
 
 /*header*/
+
+header {
+    height: 100vh;
+    background: url(https://image.jimcdn.com/app/cms/image/transf/dimension=2000x1500:format=gif/path/s95615a17cffe3057/backgroundarea/ifa24707dcc4d9849/version/1537447811/image.gif);
+    background-size: cover;
+}
+
+header>nav {
+    background-color: #1c517986;
+    width: 100%;
+
+}
+
 .container-logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
-    background-color: rgb(4, 14, 41);
+    padding: 0.5rem 0;
     color: white;
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 
 .logo {
     display: flex;
     justify-content: start;
     align-items: center;
-    max-width: 500px;
+    max-width: 600px;
 
 }
 
 .logo_img {
-    border-right: 2px solid rgb(255, 255, 255);
     padding: 0 1rem;
 }
 
 a.logo_text {
-    font-size: 16px;
-    font-family: "arial";
+    font-size: 0.8rem;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     padding-left: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5rem;
     text-decoration: none;
-    max-width: 500px;
 }
 
 .logo_text:hover {
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    transition: 1s ease;
+
 }
 
 .info {
@@ -55,8 +66,6 @@ a.logo_text {
     padding: 0 3rem;
 
 }
-
-
 
 .icon {
     display: none;
@@ -72,7 +81,6 @@ a.logo_text {
     color: white;
     margin: 10px;
     padding: 1rem 1rem;
-
 }
 
 .social_networks {
@@ -84,25 +92,29 @@ a.logo_text {
     padding: 0 0.2rem;
 }
 
-/*nav*/
-nav {
-    width: 100%;
-    background-color: rgb(4, 14, 41);
+.nav-menu {
+    width: 90%;
     color: rgb(54, 213, 30);
     padding: 1rem 2rem;
-    border-top: 3px solid rgb(255, 255, 255);
+    background: none;
+    margin: auto;
 
 }
 
-.nav-section {
+.nav-line {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-menu>ul {
     width: 80%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin: 1rem 0;
     justify-content: space-between;
-    color: rgb(4, 14, 41);
-    font-size: 1.1rem;
+    font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     margin: auto;
@@ -117,37 +129,37 @@ nav {
     display: none;
 }
 
-/*nav*/
-
 /*about-me-section*/
 
 .about-me-section {
-    background-image: url(./images/soha\ korxonalari.jpg);
-    height: 68vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    padding: 0 1rem;
+    padding: 4rem 1rem 0 1rem;
 
 }
 
 .about-me-section_overlay {
-    width: 100%;
-    height: 100%;
-    background-color: #313b3b01;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    margin: auto;
+    padding: 1rem 0;
+
+
 }
 
 
 .about-me-section_overlay>h1 {
     text-align: center;
     max-width: 900px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 1.5em;
     cursor: pointer;
     padding: 0 1rem;
+    color: white;
+    text-transform: uppercase;
 
 }
 
@@ -156,7 +168,7 @@ nav {
     max-width: 900px;
     font-size: 1rem;
     padding: 1.7em 0;
-    color: rgba(255, 255, 255, 0.925);
+    color: white;
     cursor: pointer;
     padding: 1rem;
 }
@@ -195,7 +207,7 @@ nav {
         display: none;
     }
 
-    .nav-section {
+    .nav-menu {
         display: none;
     }
 
