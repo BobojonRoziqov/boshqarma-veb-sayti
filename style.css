@@ -8,12 +8,11 @@
 
 /*header*/
 header {
-    background: url(https://www.legalcheek.com/wp-content/uploads/2020/04/1585931159_world-lead.jpeg);
+    background: url(./images/1585931159_world-lead.jpeg);
     background-size: cover;
-    background-position: center;
-    
-    
-}
+    background-position: center; 
+    height: 100vh;  
+    }
 
 header>nav {
     background-color: #010b13a6;
@@ -37,7 +36,6 @@ header>nav {
     align-items: center;
     max-width: 550px;
 }
-
 
 .logo_text {
     font-size: 0.8rem;
@@ -117,11 +115,10 @@ header>nav {
     display: none;
 }
 
-
 .nav-info {
     display: none;
     text-align: center;
-        font-size: 0.5rem; 
+    font-size: 0.5rem; 
     margin-top: 1rem; 
     
 }
@@ -140,15 +137,20 @@ header>nav {
 .section_overlay>h1 {
     text-align: center;
     max-width: 900px;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     font-weight: bold;
     line-height: 2em;
     cursor: pointer;
     color: #ffffff;
     text-transform: uppercase;
-    margin: 6rem 0 2rem 0;
-  
-     
+    margin: 6rem 0 2rem 0; 
+    animation-name: examples;
+    animation-duration: 4s;    
+}
+
+@keyframes examples {
+from {font-size: 1.2rem; opacity: 20%;}
+to {font-size: 1.8rem; opacity: 100%;}
 }
 
 .section_overlay>p {
@@ -157,8 +159,7 @@ header>nav {
     font-size: 1rem;
     color: white;
     cursor: pointer;
-    margin: 2rem 0;
-    
+    margin: 2rem 0;    
 }
 
 .section_overlay>button {
@@ -168,8 +169,8 @@ header>nav {
     border: none;
     font-weight: bold;
     color: white;
-    background: #f2545f;
-    
+    background: #f2545f;  
+  
 }
 
 .section_overlay>button:hover {
@@ -179,30 +180,69 @@ header>nav {
 
 /*header*/
 
-
 /*about-me-section*/
-
 .about-me-section {
-    border: 1px solid red;
-    padding: 4rem 0 2rem 0;
+    position: relative; 
+    height: 80vh;  
+    overflow: hidden;
+    border: 1px solid red;  
+    padding: 4rem 0;    
 }
 
 .about-me-section>main {
     width: 80%;
-    margin: auto;
-    border: 2px solid blue;
+    margin: 0 10%;  
+    height: 60vh;    
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content:center;
+    align-items: center;
+    animation-name: example;
+    animation-duration: 4s; 
+    
 }
 
+@keyframes example {
+    from {top: 65vh;}
+    to {top: 4rem}
+    }
+
+
 .about-me-info {
-    border: 1px solid yellow;
     width: 600px;
+    background-color: rgba(250, 250, 250, 0.555);
+   margin: auto;
+    
 }
+
+.about-me-info>h1 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+    font-weight: 700;
+    
+}
+
+.tasks {
+    color: gray;
+    list-style: none;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks>li {
+    margin: 10px 0;  
+}
+
+.container-video {
+    width: 600px;
+    height: 64vh;
+}
+
 
 
 /*about-me-section*/
-
-
-
 
 
 @media only screen and (max-width: 1024px) {
@@ -240,6 +280,10 @@ header>nav {
         margin: 0 1rem;
 
     }
+
+    .about-me-section {
+        position: relative; 
+        height: 200vh; }
 
    /*header*/
 
