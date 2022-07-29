@@ -182,37 +182,33 @@ to {font-size: 1.8rem; opacity: 100%;}
 
 /*about-me-section*/
 .about-me-section {
-    position: relative; 
-    height: 80vh;  
     overflow: hidden;
     border: 1px solid red;  
-    padding: 4rem 0;    
+    padding: 4rem 0 15rem 0;    
 }
 
 .about-me-section>main {
     width: 80%;
     margin: 0 10%;  
-    height: 60vh;    
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
     justify-content:center;
     align-items: center;
     animation-name: example;
-    animation-duration: 4s; 
+    animation-duration: 6s; 
     
 }
 
 @keyframes example {
-    from {top: 65vh;}
-    to {top: 4rem}
+    from {opacity:0%;}
+    to {opacity:120%}
     }
 
 
 .about-me-info {
     width: 600px;
     background-color: rgba(250, 250, 250, 0.555);
-   margin: auto;
+    margin: auto;
     
 }
 
@@ -239,10 +235,49 @@ to {font-size: 1.8rem; opacity: 100%;}
     width: 600px;
     height: 64vh;
 }
-
-
-
 /*about-me-section*/
+
+
+
+/*directions-section*/
+.directions-section {
+    background-image: url(https://media.istockphoto.com/vectors/blockchain-technology-background-vector-id1132628790?k=20&m=1132628790&s=170667a&w=0&h=IqHr2jVxSfPh2MfA62uiIXvc7RMhiAcM257SfZThzk8=);
+    height: 400px;
+}
+
+    .direction {
+background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190622/ourmid/pngtree-dark-blue-technology-world-telecommunication-day-banner-background-image_225220.jpg);        
+background-position: center;
+background-size: cover;
+
+width: 400px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        color: white;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    .direction>i {
+        font-size: 3rem;   
+        font-weight: bold;
+    }
+
+
+
+
+
+/*directions-section*/
+
+
+
+
+
 
 
 @media only screen and (max-width: 1024px) {
@@ -280,10 +315,6 @@ to {font-size: 1.8rem; opacity: 100%;}
         margin: 0 1rem;
 
     }
-
-    .about-me-section {
-        position: relative; 
-        height: 200vh; }
 
    /*header*/
 
